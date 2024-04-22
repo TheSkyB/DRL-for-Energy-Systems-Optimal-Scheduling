@@ -243,7 +243,7 @@ class Arguments:
         self.num_episode=2000 # to control the train episodes for PPO
         self.gamma = 0.995  # discount factor of future rewards
         self.learning_rate = 2e-4
-        self.soft_update_tau = 2 ** -8  # 2 ** -8 ~= 5e-3
+        self.soft_update_tau = 2 ** -8  # 2 ** -8 ~= 5e-3  #应该用不上才对
 
         self.net_dim = 256  # the network width
         self.batch_size = 4096  # num of transitions sampled from replay buffer.
